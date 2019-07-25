@@ -12,13 +12,10 @@ eureka:
 zuul: 
   ignored-services: '*'   #设置不能使用微服务名称来访问项目
   routes: 
-     user: 
-       service-id: woniustore-user
-       path: /user/**
-     product: 
-       service-id: woniustore-product  #你们写的provider类的微服务名称加到下面这里是个示范
-       path: /product/**
-   
+        
+     root:
+       service-id: cbdsp-sm
+       path: /root/**
 
 info: #监控信息 
   app.name: CBDSharingParkingSystem
