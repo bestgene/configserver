@@ -1,0 +1,14 @@
+server:
+  port: 9999
+
+spring:
+   profiles: dashboard
+   application: 
+    name: cbdsp-config-client-dashboard
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url: 
+       defaultZone: http://127.0.0.1:9000/eureka/,http://127.0.0.1:9001/eureka/
+  instance: 
+    instance-id: cbdsp-config-client-dashboard # 配置注册中心显示出来的微服务名称
+    prefer-ip-address: true     #访问路径可以显示IP地址 
