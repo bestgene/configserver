@@ -12,7 +12,9 @@ eureka:
 zuul: 
   ignored-services: '*'   #设置不能使用微服务名称来访问项目
   routes: 
-        
+     office:
+       service-id: cbdsp-office
+       path /office/**
      root:
        service-id: cbdsp-sm
        path: /root/**
