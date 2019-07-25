@@ -14,10 +14,13 @@ zuul:
   routes: 
      office:
        service-id: cbdsp-office
-       path /office/**
+       path: /office/**
      root:
        service-id: cbdsp-sm
        path: /root/**
+     perm:
+       service-id: cbdsp-sm
+       path: /perm/**
 
 info: #监控信息 
   app.name: CBDSharingParkingSystem
