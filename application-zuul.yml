@@ -15,12 +15,15 @@ zuul:
      office:
        service-id: cbdsp-office
        path: /office/**
+       strip-prefix: false
      root:
        service-id: cbdsp-sm
        path: /root/**
+       strip-prefix: false
      perm:
        service-id: cbdsp-sm
        path: /perm/**
+       strip-prefix: false
 
 info: #监控信息 
   app.name: CBDSharingParkingSystem
