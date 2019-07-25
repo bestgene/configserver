@@ -24,7 +24,19 @@ zuul:
        service-id: cbdsp-sm
        path: /perm/**
        strip-prefix: false
-
+     park:
+       service-id: CBDSP-landlord
+       path: /parm/**
+       strip-prefix: false
+     order:
+       service-id: CBDSP-landlord
+       path: /order/**
+       strip-prefix: false
+     lease:
+       service-id: CBDSP-landlord
+       path: /lease/**
+       strip-prefix: false
+    
 info: #监控信息 
   app.name: CBDSharingParkingSystem
   company.name: www.woniuxy.com
