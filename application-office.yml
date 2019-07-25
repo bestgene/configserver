@@ -1,0 +1,31 @@
+server:
+  port: 8888         #当前服务的端口号
+
+# 开启服务器降级
+feign:
+  hystrix:
+    enabled: true
+#客户端注册进eureka服务列表内
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka/,http://127.0.0.1:9001/eureka/
+  instance:
+    instance-id: cbdsp-office # 配置注册中心显示出来的微服务名称
+    prefer-ip-address: true     #访问路径可以显示IP地址
+
+#当前服务的名字，后面会用到
+spring:
+   application:
+    name: cbdsp-office
+    
+info: #监控信息
+  app.name: woniucloud
+  company.name: www.woniuxy.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+
+spring: 
+  profiles: office
+  application:
+   name: cbdsp-office   #当前服务的名字，后面会用到
