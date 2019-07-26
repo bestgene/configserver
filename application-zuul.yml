@@ -12,6 +12,10 @@ eureka:
 zuul: 
   ignored-services: "*"   #设置不能使用微服务名称来访问项目
   routes: 
+     user:
+       service-id: cbdsp-login-register
+       path: /user/**
+       strip-prefix: false
      office:
        service-id: cbdsp-office
        path: /office/**
@@ -36,11 +40,6 @@ zuul:
        service-id: CBDSP-landlord
        path: /lease/**
        strip-prefix: false
-     user:
-       service-id: CBDSP-LOGIN-REGISTER
-       path: /user/**
-       strip-prefix: false
-      
     
 info: #监控信息 
   app.name: CBDSharingParkingSystem
