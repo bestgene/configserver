@@ -36,13 +36,9 @@ zuul:
        service-id: CBDSP-landlord
        path: /park/**
        strip-prefix: false
-     order:
+     renter:
        service-id: cbdsp-renter
-       path: /order/**
-       strip-prefix: false
-     lease:
-       service-id: cbdsp-renter
-       path: /lease/**
+       path: /renter/**
        strip-prefix: false
 ribbon:
   ReadTimeout: 5000
