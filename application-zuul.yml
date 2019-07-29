@@ -37,11 +37,11 @@ zuul:
        path: /park/**
        strip-prefix: false
      order:
-       service-id: CBDSP-landlord
+       service-id: cbdsp-renter
        path: /order/**
        strip-prefix: false
      lease:
-       service-id: CBDSP-landlord
+       service-id: cbdsp-renter
        path: /lease/**
        strip-prefix: false
 ribbon:
