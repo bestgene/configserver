@@ -10,6 +10,10 @@ eureka:
     prefer-ip-address: true     #访问路径可以显示IP地址  x
 
 zuul: 
+  host:
+    max-per-route-connections: 500
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 60000
   ignored-services: "*"   #设置不能使用微服务名称来访问项目
   routes: 
      user:
@@ -40,11 +44,8 @@ zuul:
        service-id: CBDSP-landlord
        path: /lease/**
        strip-prefix: false
-zuul:
-  host:
-    max-per-route-connections: 500
-    socket-timeout-millis: 60000
-    connect-timeout-millis: 60000
+
+ 
     
 info: #监控信息 
   app.name: CBDSharingParkingSystem
