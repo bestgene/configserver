@@ -44,7 +44,16 @@ zuul:
        service-id: CBDSP-landlord
        path: /lease/**
        strip-prefix: false
-
+ribbon:
+  ReadTimeout: 5000
+  SocketTimeout: 5000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 2500
  
     
 info: #监控信息 
