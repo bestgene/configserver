@@ -40,6 +40,10 @@ zuul:
        service-id: cbdsp-renter
        path: /renter/**
        strip-prefix: false
+     complaint:
+       service-id: cbdsp-complaint
+       path: /complaint/**
+       strip-prefix: false
 ribbon:
   ReadTimeout: 5000
   SocketTimeout: 5000
