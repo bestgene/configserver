@@ -41,7 +41,7 @@ zuul:
        path: /renter/**
        strip-prefix: false
      complaint:
-       service-id: cbdsp-complaint
+       service-id: complaint-provider
        path: /complaint/**
        strip-prefix: false
 ribbon:
