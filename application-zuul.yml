@@ -44,6 +44,11 @@ zuul:
        service-id: complaint-provider
        path: /complaint/**
        strip-prefix: false
+     complaint:
+     service-id: cbdsp-allpage
+     path: /page/**
+     strip-prefix: false
+
 ribbon:
   ReadTimeout: 5000
   SocketTimeout: 5000
