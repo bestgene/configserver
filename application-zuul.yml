@@ -44,7 +44,7 @@ zuul:
        service-id: complaint-provider
        path: /complaint/**
        strip-prefix: false
-     complaint:
+     page:
        service-id: cbdsp-allpage
        path: /page/**
        strip-prefix: false
