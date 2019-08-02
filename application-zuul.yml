@@ -69,9 +69,9 @@ spring:
 # redis的配置信息
   redis:
     database: 0         #连接Redis的库
-    host: 127.0.0.1     #主机名称
+    host: r-uf6pjy4xqsoeq96t72pd.redis.rds.aliyuncs.com     #主机名称
     port: 6379          # 端口号
-    password:           # 连接密码，没有密码可以不写
+    password: Email831100          # 连接密码，没有密码可以不写
     lettuce:            # 設置redis連接池
        pool: 
          max-active: 10   # 最大連接數量
